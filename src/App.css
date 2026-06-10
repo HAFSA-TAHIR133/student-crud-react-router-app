@@ -1,0 +1,276 @@
+/* home page design */
+.homePage,.login-container {
+  background-image: url('/bac.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+  color: #ebedf1;
+  min-height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.login-container{
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+}
+.login-container h1{
+  text-shadow: 0px 4px 20px rgba(255, 255, 255, 0.15);
+  text-align: center;
+}
+.homePage h1 {
+  font-size: 60px;
+  text-align: center; 
+  text-shadow: 0px 4px 20px rgba(255, 255, 255, 0.15);
+}
+.login-container button{
+  background-color: #050505;
+  color: #ebedf1;
+  cursor: pointer;
+  border:1px solid #ebedf1;
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 20px;
+  transition: color 0.3s ease;
+  letter-spacing: 3px;
+  font-weight: 300;
+  margin-top:18px ;
+}
+.login-container button:hover{
+  background-color: #ebedf1;
+  color: #050505;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  padding: 15px 25px;
+  gap: 25px;
+  font-size: 18px;
+  background-color: #050505; 
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 10%;
+  
+}
+
+.navbar a {
+  color: #ebedf1; 
+  text-decoration: none; 
+  font-weight: 500;
+  transition: color 0.3s ease; 
+}
+.navbar a:hover {
+  color: #2563eb; 
+}
+
+/* ---------- Forms ---------- */
+
+.addStudentForm,
+.updated-form {
+  max-width: 700px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.updated-form-fileds,
+.addStudentForm label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.addStudentForm label,
+.updated-form label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.addStudentForm input,
+.updated-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.addStudentForm input:focus,
+.updated-form input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* ---------- Buttons ---------- */
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.submit-btn {
+  background-color: #2563eb;
+  color: white;
+}
+
+.close-display-btn {
+  background-color: #dc2626;
+  color: white;
+  display: block;
+  margin: 20px auto;
+}
+
+/* ---------- Student Records ---------- */
+
+.display-student-heading {
+  text-align: center;
+  font-size: 32px;
+  margin: 25px 0;
+  color: #1f2937;
+}
+
+.display-student-records {
+  max-width: 700px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+}
+
+.display-student-records h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #2563eb;
+}
+
+.display-student-records h4 {
+  margin: 6px 0;
+  color: #374151;
+  font-weight: 500;
+}
+
+/* ---------- Edit/Delete Buttons ---------- */
+
+.edit-btns {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.edit-btns button:first-child {
+  background-color: #16a34a;
+  color: white;
+}
+
+.edit-btns button:last-child {
+  background-color: #dc2626;
+  color: white;
+} 
+
+/* Search Container */
+
+.search-Student{
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+
+.search-Student h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2563eb;
+    font-size: 30px;
+}
+
+/* Search Input */
+
+.search-Student input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.search-Student input:focus{
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* Search Results */
+
+.search-result{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Matching Record Card */
+
+.Match-record{
+    background-color: #f8fafc;
+    border-left: 6px solid #2563eb;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Text */
+
+.Match-record h4{
+    margin: 8px 0;
+    color: #374151;
+    font-weight: 500;
+}
+
+/* No Result Message */
+
+.no-record{
+    margin-top: 20px;
+    text-align: center;
+    color: #dc2626;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.show-records-btn{
+
+  margin-top: 17px;
+  margin-left: 100px;
+}
+.main-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  color:#133075;
+  font-size: 40px;
+}
